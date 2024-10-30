@@ -14,15 +14,17 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Setup lazy.nvim
+-- Setup lazy.nvim
 require("lazy").setup({
   spec = {
     { "rose-pine/neovim", name = "rose-pine" },
     { "tpope/vim-fugitive", name = "fugitive" },
     { "williamboman/mason-lspconfig.nvim", name = "mason-lspconfig" },
+    { "github/copilot.vim", name = "ass-istant"},
     { "williamboman/mason.nvim", name = "mason" }, 
     { "neovim/nvim-lspconfig", name = "lspconfig" },
-    { "nvim-treesitter/nvim-treesitter", name = "treesitter"}
+    { "nvim-treesitter/nvim-treesitter", name = "treesitter"},
+    { "nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" } }
   }
 })
 
