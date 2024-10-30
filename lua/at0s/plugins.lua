@@ -15,31 +15,22 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
-require("lazy").setup({
-  spec = {
-    { "rose-pine/neovim", name = "rose-pine" },
-    { "tpope/vim-fugitive", name = "fugitive" },
-    { "williamboman/mason-lspconfig.nvim", name = "mason-lspconfig" },
-    { "github/copilot.vim", name = "ass-istant"},
-    { "williamboman/mason.nvim", name = "mason" }, 
-    { "neovim/nvim-lspconfig", name = "lspconfig" },
-    { "nvim-treesitter/nvim-treesitter", name = "treesitter"},
-    { "nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" } }
-  }
-})
+require("lazy").setup("plugins")
+   -- { "williamboman/mason-lspconfig.nvim", name = "mason-lspconfig" },
+   -- { "williamboman/mason.nvim", name = "mason" }, 
+   -- { "neovim/nvim-lspconfig", name = "lspconfig" },
 
 -- Configure any other settings here. See the documentation for more details. colorscheme that will be used when installing plugins. install = { colorscheme = { "rose-pine" } }, automatically check for plugin updates checker = { enabled = true }, })
-vim.cmd("colorscheme rose-pine")
-
-require("mason").setup({
-  ui = {
-    icons = {
-      package_installed = "✓",
-      package_pending = "➜",
-      package_uninstalled = "✗"
-    }
-  }
+--
+--require("mason").setup({
+--  ui = {
+--    icons = {
+--      package_installed = "✓",
+--      package_pending = "➜",
+--      package_uninstalled = "✗"
+--    }
+--  }
 })
-
-require("mason-lspconfig").setup()
+--
+--require("mason-lspconfig").setup()
 
