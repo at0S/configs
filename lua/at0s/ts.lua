@@ -8,7 +8,7 @@ configs.setup {
   ensure_installed = "all",
   sync_install = false,
   auto_install = true,
-  ignore_install = {"just"},
+  ignore_install = {"just", "systemverilog"},
   highlight = {
     enable = true,
     disable = {""},
