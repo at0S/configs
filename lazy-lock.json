@@ -12,5 +12,5 @@
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "rose-pine": { "branch": "main", "commit": "20c7940da844aa4f162a64e552ae3c7e9fdc3b93" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
-  "treesitter": { "branch": "master", "commit": "6108ba7a135ed37e32276ccb877a348af17fe411" }
+  "treesitter": { "branch": "master", "commit": "6d957c22cb48a734b009a69d03c18d20042c4754" }
 }
