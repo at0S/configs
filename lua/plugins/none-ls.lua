@@ -15,6 +15,7 @@ return {
       },
     })
     -- to format the buffer need to press leader + fg
-    vim.keymap.set("n", "<leader>fg", vim.lsp.buf.format, {})
+    vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format, {})
+    vim.keymap.set("n", "<leader>ll", vim.diagnostic.open_float, {})
   end,
 }
