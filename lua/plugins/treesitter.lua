@@ -1,19 +1,12 @@
 return {
-  "nvim-treesitter/nvim-treesitter", name = "treesitter",
+  "nvim-treesitter/nvim-treesitter",
+  name = "treesitter",
+  build = ":TSUpdate",
   config = function()
-    local configs = require("nvim-treesitter.configs")
-    configs.setup {
-      run = ":TSUpdate",
+    require("nvim-treesitter").setup({
       ensure_installed = "all",
-      sync_install = false,
+      ignore_install = { "just", "systemverilog" },
       auto_install = true,
-      ignore_install = {"just", "systemverilog"},
-      highlight = {
-        enable = true,
-        disable = {""},
-        additional_vim_regex_highlighting = false,
-      },
-      ident = { enable = true, disable = {"yaml"} }
-    }
-  end
+    })
+  end,
 }
